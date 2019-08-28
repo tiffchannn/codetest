@@ -1,6 +1,6 @@
 # Code Test: 'Factoid Cards'
 
-Please read this whole README before starting.
+Please read this whole README before starting. 
 
 ## Overall Requirements
 Create an application to feature one of your extracurricular interests. Select an interest that has items of alike members (Stamps, Books, Songs, etc). Please use this as a chance to showcase your personality by selecting a category of things you enjoy.
