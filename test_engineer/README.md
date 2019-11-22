@@ -15,7 +15,7 @@ Your task is to take charge of the Quality Assurance for the attached web applic
 It is your task to create a QA testing approach to ensure the quality of this product. This is a twofold process.
 
 1. Create a manual testing script using whatever tools you prefer, and generate for our team a testing report of your testing against
-2. Create an automated testing mechanism using whatever tools you prefer. 
+2. Create an automated testing mechanism using whatever tools you prefer.
 
 #### As soon as you begin:
 * [ ] Fork this repository into a public repository on your gitlab/etc account
@@ -24,31 +24,30 @@ It is your task to create a QA testing approach to ensure the quality of this pr
 * [ ] Commit early and often. We'll likely be following along with your progress.
 
 #### Upon completing this, please post to us:
-* [ ] A link to your git repository such that we may view your code.
 * [ ] A link to somewhere where we may view your QA Checklist
+* [ ] A link to your git repository such that we may view your automated QA code
+* [ ] A link to somewhere where we may view your QA Report of our product
 
-## Technical Requirements
+## Testing Requirements
 
-The underpinnings of the command's functionality may be written in whatever language you choose,
-so long as it is operable after installing the package (beware libraries that do not come installed by default)
+#### Manual Testing
+* [ ] Test all interaction cases that you deem worthy
 
-#### Command Line Interface
-* [ ] Using the command `sl` should return to you a randomly chosen train (or vehicle, or art or whatever!).
-* [ ] Using the command `sl -n N` (with option n specified and argument integer passed) should show you the Nth locomotive in the bunch
-* [ ] Please handle options that are not defined or malformed
+#### Automated Testing
+* [ ] Test major interactions listed
+  * [ ] Create TODO
+  * [ ] Complete TODO
+  * [ ] Un-Complete TODO
+  * [ ] Destroy TODO
 
-#### Packaging
-* [ ] Provide use of this command via a apt repo style package.
-* [ ] The package must function on any currently available OS of your choosing.
-
-#### Reproducibility
-* [ ] Use a make file to create your package
+#### Final Report
+* [ ] Create a distributable final report that gives information to the Engineering team about items that are broken and undesirable interactions.
 
 ## BONUS
 
 If you're too cool for school and knocked all the above out already, consider adding some improvements to what you've made.
 
 ### Suggestions for improvements
-* [ ] How about having the program pull random ascii art from a file or folder?
-* [ ] Make it more pernicious by placing ascii art in a file in the directory if one is specified
+* [ ] Create a user acceptance plan.
+* [ ] Create documentation for a user about how to use the product.
 * [ ] Edit this ReadMe with new suggestions for how to improve this code test
