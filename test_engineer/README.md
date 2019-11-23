@@ -14,8 +14,9 @@ Your task is to take charge of the Quality Assurance for the attached web applic
 
 It is your task to create a QA testing approach to ensure the quality of this product. This is a twofold process.
 
-1. Create a manual testing script using whatever tools you prefer, and generate for our team a testing report of your testing against this todo app
+1. Create a manual testing script using whatever tools you prefer, and validate the todo app against it.
 2. Create an automated testing mechanism using whatever tools you prefer.
+3. Create a report of your testing against this todo app to present to our team
 
 #### As soon as you begin:
 * [ ] Fork this repository into a public repository on your gitlab/etc account
