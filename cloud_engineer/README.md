@@ -34,9 +34,9 @@ It is your task to create scripts and processes around creating and destrying a 
 ## Cloud Script Requirements
 
 #### Linux VM CRUD
-* [ ] VM is created via bash script on a 3rd party provider (not user's own computer)
-* [ ] VM (from above) is destroyed via bash script
-* [ ] A list of living VMs is shown via bash script
+* [ ] VM is created via script on a 3rd party provider (not user's own computer)
+* [ ] VM (from above) is destroyed via script
+* [ ] A list of living VMs is shown via script
 
 #### Linux VMs are prepared
 * [ ] A created VM is running the todo application
@@ -49,4 +49,6 @@ If you're too cool for school and knocked all the above out already, consider ad
 
 ### Suggestions for improvements
 * [ ] Create a second server, running the todo application as well but with a different operating system.
+* [ ] Your spin-up/provision script is robust, and creates cloud instances atomically
+* [ ] The list of living VMs includes other useful information about the instance
 * [ ] Edit this ReadMe with new suggestions for how to improve this code test.
