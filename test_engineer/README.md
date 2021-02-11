@@ -4,7 +4,7 @@ Welcome to the test engineer code test! This will be a test of your:
 1. Ability to troubleshoot
 2. Organizational capabilities
 
-The point of this test is to understand how you approach a technical problem. The way you approach these problems are just as important as your solutions.
+The point of this test is to understand how you approach a technical problem. The way you approach these problems are just as important as your solutions. Please communicate with us via email as if you already work here, and add documentation/comments as you go along too please. 
 
 We expect this test to take you about 4 - 8 hours. Given that most people are busy, we'd like to hear back from you within 72 hours of starting.
 
