@@ -5,7 +5,7 @@ Welcome to the cloud engineer code test! This will be a test of your:
 2. Ability to troubleshoot challenging issues
 3. Capability to organize, prioritize, and execute
 
-The point of this test is to understand how you approach a technical problem. The way you approach these problems are just as important as your solutions.
+The point of this test is to understand how you approach a technical problem. The way you approach these problems are just as important as your solutions. Please communicate with us via email as if you already work here, and add documentation/comments as you go along too please. 
 
 We expect this test to take you about *6 - 10 hours*. Given that most people are busy, We want to hear back from you *within 72 hours of starting this test*.
 
