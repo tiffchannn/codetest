@@ -47,7 +47,7 @@ The Backend should be NodeJs with whatever middleware(s) you'd like to use.
 #### Interactions to support
 * [ ] Please provide a RESTful backend for the CRUDL of factoids
 * [ ] Factoids should be transported to the UI via JSON
-* [ ] Factoids should be stored in some sort of SQL/NoSQL/Flat File on the backend
+* [ ] Factoids should be stored in your database on the backend. You can use any database you want: SQL, NoSQL, or flat files such as db.txt!
 
 ## BONUS
 
