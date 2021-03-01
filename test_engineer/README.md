@@ -8,11 +8,6 @@ The point of this test is to understand how you approach a technical problem. Th
 
 We expect this test to take you about 4 - 8 hours. Given that most people are busy, we'd like to hear back from you within 72 hours of starting.
 
-Send us an email when you're finished and we'll schedule a code review with engineers from across our teams to discuss your submission. We'll discuss the finer
- points of your implementation, walk through your code, demo its functionality (or troubleshoot its brokenness), and give feedback on its strengths, weaknesses 
- and, if we're being honest with ourselves, bugs. We don't expect your submission to be perfect, but we do expect you to be able to frankly communicate and 
- discuss your submission in a professional environment.
-
 ## Overall Requirements
 
 Your task is to take charge of the Quality Assurance for the attached web application. It is a simple TODO application in which a user can Add and Remove todos, as well as mark todo's as Done or Undone.
