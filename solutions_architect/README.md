@@ -11,6 +11,7 @@ The point of this test is to understand how you approach a technical documentati
 
 We expect this test to take you about *6 - 10 hours*. Given that most people are busy, We want to hear back from you *within 72 hours of starting this test*.
 
+
 ## Background
 
 At OpenDrives we make Network attached Storage, it's basically a file server that you can easily access over your infrastructure. In the real world, this product has very similar requirements to your kitchen's refrigerator. You expect it to store your belongings with large capacity, work without encountering problems, and be easy to change the parameters of storage (temperature and freezer vs fridge).
