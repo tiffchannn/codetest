@@ -11,6 +11,11 @@ The point of this test is to understand how you approach a technical problem. Th
 
 We expect this test to take you about *6 - 10 hours*. Given that most people are busy, We want to hear back from you *within 72 hours of starting this test*.
 
+Send us an email when you're finished and we'll schedule a code review with engineers from across our teams to discuss your submission. We'll discuss the finer
+ points of your implementation, walk through your code, demo its functionality (or troubleshoot its brokenness), and give feedback on its strengths, weaknesses 
+ and, if we're being honest with ourselves, bugs. We don't expect your submission to be perfect, but we do expect you to be able to frankly communicate and 
+ discuss your submission in a professional environment.
+
 ## Overall Requirements
 Create an application to feature one of your extracurricular interests. Select an interest that has items of alike members (Stamps, Books, Songs, etc). Please use this as a chance to showcase your personality by selecting a category of things you really enjoy, perhaps things you do for fun.
 

@@ -9,6 +9,11 @@ The point of this test is to understand how you approach a technical problem. Th
 
 We expect this test to take you about 4 - 8 hours. Given that most people are busy, We'd like to hear back from you within 72 hours of starting.
 
+Send us an email when you're finished and we'll schedule a code review with engineers from across our teams to discuss your submission. We'll discuss the finer
+ points of your implementation, walk through your code, demo its functionality (or troubleshoot its brokenness), and give feedback on its strengths, weaknesses 
+ and, if we're being honest with ourselves, bugs. We don't expect your submission to be perfect, but we do expect you to be able to frankly communicate and 
+ discuss your submission in a professional environment.
+
 ## Overall Requirements
 Your task is to create a copy or fork of `sl`, a cruel program made to punish users who mispell `ls`. Instead of showing the the contents of the
 current directory as one would expect from `ls`, `sl` displays a loooooong animation of a steam locomotive crossing the terminal.
@@ -18,9 +23,11 @@ You will additionally extend the functionality and create a distributable packag
 Your new and improved `sl` will no longer show the same train every time but rather your own flavor, or assortment of flavors! 
 
 You may use as much or as little from the `sl` source as you wish, and though we recommend you program in C/C++ or python, 
-you may use any language of your choice (as long as it isn't [Ook!](https://esolangs.org/wiki/Ook!) ). Just as well, we recommend make a .deb package for 
-your distributable, though you may use any packaging system that a readily available operating system uses. We love projects 
-like [distri](https://michael.stapelberg.ch/posts/2019-08-17-introducing-distri/) too, but we shouldn't exactly be putting long-term projects on them.
+you may use any language of your choice (as long as it isn't [Ook!](https://esolangs.org/wiki/Ook!) ). 
+
+Just as well, we recommend make a .deb package for your distributable, though you may use any packaging system that a readily available operating system uses. 
+We love projects like [distri](https://michael.stapelberg.ch/posts/2019-08-17-introducing-distri/) too, but we shouldn't exactly be putting long-term projects 
+on them.
 
 After installing the package, you should be able to type `sl` and at least see the following:
 
@@ -50,8 +57,8 @@ The underpinnings of the command's functionality may be written in whatever lang
 so long as it is operable after installing the package (beware libraries that do not come installed by default)
 
 #### Command Line Interface
-* [ ] Using the command `sl` should return to you a randomly chosen train (or vehicle, or art or whatever!). 
-* [ ] Using the command `sl -n N` (with option n specified and argument integer passed) should show you the Nth locomotive in the bunch
+* [ ] Using the command `sl` should return to you a randomly chosen train animation (or vehicle, or art or whatever!). 
+* [ ] Using the command `sl -n N` (with option n specified and argument integer passed) should show you the Nth locomotive animation in the bunch
 * [ ] Please handle options that are not defined or malformed
 
 #### Packaging 
