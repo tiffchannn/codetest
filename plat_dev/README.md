@@ -5,7 +5,9 @@ Welcome to the linux code test! This will be a test of your:
 2. Extend its functionality and...
 3. Create a distributable program
 
-The point of this test is to understand how you approach a technical problem. The way you code is just as important as your solution. Please communicate with us via email as if you already work here, and add documentation/comments as you go along too please. 
+The point of this test is to understand how you approach a technical problem. The way you code is just as important as your solution. 
+
+*Please communicate with us via email as if you already work here, and add documentation/comments as you go along.*
 
 We expect this test to take you about 4 - 8 hours. Given that most people are busy, We'd like to hear back from you within 72 hours of starting.
 
