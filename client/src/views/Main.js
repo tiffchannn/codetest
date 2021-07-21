@@ -29,9 +29,10 @@ const Main = () => {
 
 			{songs.map((song, idx) => {
 				return (
-					<div key={idx}>
+					<div key={idx} className="song-container">
 						<div>
 							<img
+								className="song-image"
 								src={song.imageUrl}
 								alt={song.title}
 								onClick={(e) => navigate("/song/" + song._id)}

@@ -27,6 +27,13 @@ module.exports.findOneSong = (req, res) => {
     .catch((err) => res.json(err));
 };
 
+// Update Song
+module.exports.updateSong = (req, res) => {
+  Song.findOneAndUpdate({ _id: req.params.id }, req.body, { new: true })
+    .then(updatedSong => res.json(updatedSong))
+    .catch((err) => res.json(err));
+}
+
 // Delete Song
 module.exports.deleteSong = (req, res) => {
   Song.deleteOne({ _id: req.params.id })

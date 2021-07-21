@@ -39,3 +39,12 @@
   color: black;
   text-decoration: none;
 }
+
+.song-container {
+  margin: 20px;
+}
+
+.song-image {
+  height: 200px;
+  width: 200px;
+}
