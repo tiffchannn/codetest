@@ -11,7 +11,7 @@ const SongForm = (props) => {
   const handleSubmit = (e) => {
     e.preventDefault();
 
-    axios[props.method](props.url, {
+    axios.[props.method](props.url, {
       title,
       artist,
       imageUrl,
@@ -22,7 +22,7 @@ const SongForm = (props) => {
         navigate("/");
       })
       .catch((err) => {
-        console.log("Errors: ", err.response.data);
+        console.log("Errors: ", err);
       });
   };
 
@@ -67,7 +67,7 @@ const SongForm = (props) => {
         </div>
         <input type="submit" value="Add Song" name="submit" />
       </form>
-    </div>
+    </div >
   );
 };
 
