@@ -12,7 +12,7 @@ const Update = (props) => {
   const [description, setDescription] = useState("");
 
   useEffect(() => {
-    axios.get('http://localhost:8000/api/song/' + id)
+    axios.get('/api/song/' + id)
       .then(res => {
         setTitle(res.data.title)
         setArtist(res.data.artist)
@@ -24,7 +24,7 @@ const Update = (props) => {
   const updateSong = e => {
     e.preventDefault();
 
-    axios.put('http://localhost:8000/api/song/' + id, {
+    axios.put('/api/song/' + id, {
       title,
       artist,
       imageUrl,

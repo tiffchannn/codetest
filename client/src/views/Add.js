@@ -17,7 +17,7 @@ const Add = (props) => {
       <SongForm
         method="post"
         name=""
-        url={"http://localhost:8000/api/song"}
+        url={"/api/song"}
         title=""
         artist=""
         imageUrl=""

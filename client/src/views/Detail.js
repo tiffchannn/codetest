@@ -7,7 +7,7 @@ const Detail = (props) => {
   const [song, setSong] = useState({});
 
   useEffect(() => {
-    axios.get("http://localhost:8000/api/song/" + props.id)
+    axios.get("/api/song/" + props.id)
       .then(res => setSong(res.data))
       .catch(err => console.log(err))
   }, [])

@@ -6,14 +6,14 @@ const Main = () => {
 	const [songs, setSongs] = useState([]);
 
 	useEffect(() => {
-		axios.get("http://localhost:8000/api/song")
+		axios.get("/api/song")
 			.then((res) => setSongs(res.data))
 			.catch((err) => console.log(err));
 	}, []);
 
 	const deleteSong = id => {
 		console.log("ID was clicked: ", id);
-		axios.delete("http://localhost:8000/api/song/" + id)
+		axios.delete("/api/song/" + id)
 			.then(res => {
 				const filteredSongs = songs.filter(song => song._id !== id)
 				setSongs(filteredSongs)
