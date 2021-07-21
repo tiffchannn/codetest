@@ -11,6 +11,15 @@ const Main = () => {
 			.catch((err) => console.log(err));
 	}, []);
 
+	const deleteSong = id => {
+		console.log("ID was clicked: ", id);
+		axios.delete("http://localhost:8000/api/song/" + id)
+			.then(res => {
+				const filteredSongs = songs.filter(song => song._id !== id)
+				setSongs(filteredSongs)
+			})
+	}
+
 	return (
 		<div>
 			<header>
@@ -33,6 +42,10 @@ const Main = () => {
 							<h2>{song.title}</h2>
 							<p>{song.artist}</p>
 							<p>{song.description}</p>
+						</div>
+						<div className="main-buttons">
+							<button onClick={(e) => navigate("/song/" + song._id)}>View Song</button>
+							<button onClick={(e) => deleteSong(song._id)}>Delete Song</button>
 						</div>
 					</div>
 				);
