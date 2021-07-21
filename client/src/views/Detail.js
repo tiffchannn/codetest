@@ -24,6 +24,9 @@ const Detail = (props) => {
         <p>{song.title}</p>
         <p>{song.artist}</p>
         <p>{song.description}</p>
+        <Link to={"/song/" + song._id + "/update"}>
+          Edit
+        </Link>
       </div>
     </div>
   )
