@@ -27,3 +27,15 @@
 .App-link {
   color: #61dafb;
 }
+
+.detail-header {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.home-link {
+  color: black;
+  text-decoration: none;
+}
