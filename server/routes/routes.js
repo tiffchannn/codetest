@@ -6,5 +6,5 @@ module.exports = function (app) {
     app.get('/api/song', controller.findAllSongs);
     app.get('/api/song/:id', controller.findOneSong);
     app.put('/api/song/:id', controller.updateSong);
-    app.delete('/api/song/:id', controller.deleteSong)
+    app.delete('/api/song/:id', controller.deleteSong);
 }
