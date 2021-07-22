@@ -20,9 +20,6 @@ app.get('*', (req, res) => {
     res.sendFile(path.resolve(__dirname, 'client/build', 'index.html'));
 });
 
-// app.listen(8000, () => {
-//     console.log("Listening at Port 8000")
-// })
 
 // Port connection for Heroku deployment
 let port = process.env.PORT;
