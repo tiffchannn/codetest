@@ -2,8 +2,6 @@ import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { navigate, Link } from "@reach/router";
 
-// import SongFrom from '../components/SongForm';
-
 const Update = (props) => {
   const { id } = props;
   const [title, setTitle] = useState("");
@@ -41,49 +39,56 @@ const Update = (props) => {
 
   return (
     <div>
-      <h1>Update A Song</h1>
-      <p>
-        <Link to="/" className="home-link">Home</Link>
-      </p>
+      <header className="detail-header">
+        <div></div>
+        <h1>Update A Song</h1>
+        <p>
+          <Link to="/" className="home-link">Home</Link>
+        </p>
+      </header>
       <div>
-        <form onSubmit={updateSong}>
-          <div>
-            <label>Song Title:</label>
+        <form onSubmit={updateSong} className="form">
+          <div className="form-input">
+            <label className="form-label">Song Title:</label>
             <input
+              className="input-field"
               type="text"
               value={title}
               name="title"
               onChange={(e) => setTitle(e.target.value)}
             />
           </div>
-          <div>
-            <label>Artist:</label>
+          <div className="form-input">
+            <label className="form-label">Artist:</label>
             <input
+              className="input-field"
               type="text"
               value={artist}
               name="artist"
               onChange={(e) => setArtist(e.target.value)}
             />
           </div>
-          <div>
-            <label>Image URL:</label>
+          <div className="form-input">
+            <label className="form-label">Image URL:</label>
             <input
+              className="input-field"
               type="text"
               value={imageUrl}
               name="imageUrl"
               onChange={(e) => setImageUrl(e.target.value)}
             />
           </div>
-          <div>
-            <label>Description:</label>
+          <div className="form-input">
+            <label className="form-label">Description:</label>
             <input
+              className="input-field"
               type="text"
               value={description}
               name="description"
               onChange={(e) => setDescription(e.target.value)}
             />
           </div>
-          <input type="submit" value="Update Song" name="submit" />
+          <input type="submit" value="Update Song" name="submit" className="btn" />
         </form>
       </div >
     </div>

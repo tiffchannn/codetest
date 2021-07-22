@@ -25,29 +25,27 @@ const Main = () => {
 
 	const nextSlide = () => {
 		setCurrent(current === length - 1 ? 0 : current + 1);
-		console.log("Next Slide was clicked")
 	}
 
 	const prevSlide = () => {
 		setCurrent(current === 0 ? length - 1 : current - 1);
-		console.log("Prev was clicked")
 	}
 
 
-	if (!Array.isArray(songs) || songs.length <= 0) {
-		return null;
-	}
+	// if (!Array.isArray(songs) || songs.length <= 0) {
+	// 	return null;
+	// }
 
 	return (
 		<div>
 			<header>
 				<h1 className="header-title">Music is my Love Language</h1>
-				<button onClick={(e) => navigate("/song/add")}>Add Jams!</button>
+				<button onClick={(e) => navigate("/song/add")} className="main-add-btn">Add Jams!</button>
 			</header>
 
 			<div className="slider">
-				<FiArrowLeft className="left-arrow" onClick={prevSlide} />
-				<FiArrowRight className="right-arrow" onClick={nextSlide} />
+				<FiArrowLeft className={songs.length === 0 ? "empty-list" : "left-arrow"} onClick={prevSlide} />
+				<FiArrowRight className={songs.length === 0 ? "empty-list" : "right-arrow"} onClick={nextSlide} />
 				{songs.map((song, idx) => {
 					return (
 						<div key={idx} className={idx === current ? 'slide active' : 'slide'}>
@@ -64,13 +62,13 @@ const Main = () => {
 										</div>
 
 										<div>
-											<h2>{song.title}</h2>
-											<p>{song.artist}</p>
-											<p>{song.description}</p>
+											<h2 className="song-title">{song.title}</h2>
+											<p className="text">{song.artist}</p>
+											<p className="text">{song.description}</p>
 										</div>
-										<div className="main-buttons">
-											<button onClick={(e) => navigate("/song/" + song._id)}>View Song</button>
-											<button onClick={(e) => deleteSong(song._id)}>Delete Song</button>
+										<div className="main-btns">
+											<button onClick={(e) => navigate("/song/" + song._id)} className="task-btn">View Song</button>
+											<button onClick={(e) => deleteSong(song._id)} className="task-btn">Delete Song</button>
 										</div>
 									</>
 								)

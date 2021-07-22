@@ -16,15 +16,14 @@ const Detail = (props) => {
     <div>
       <header className="detail-header">
         <div></div>
-        <h1 className="song-name">{song.name}</h1>
-        <p className="home-link"><Link to="/" className="home-link">Back Home!</Link></p>
+        <h1 className="song-name">{song.title}</h1>
+        <p className="home-link"><Link to="/" className="home-link">Home</Link></p>
       </header>
-      <div>
-        <img src={song.imageUrl} alt={song.title} />
-        <p>{song.title}</p>
-        <p>{song.artist}</p>
-        <p>{song.description}</p>
-        <Link to={"/song/" + song._id + "/update"}>
+      <div className="song-info">
+        <img src={song.imageUrl} alt={song.title} className="detail-song-image" />
+        <p className="detail-song-text">{song.artist}</p>
+        <p className="detail-song-text">{song.description}</p>
+        <Link to={"/song/" + song._id + "/update"} className="edit-link">
           Edit
         </Link>
       </div>

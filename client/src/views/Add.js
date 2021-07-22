@@ -6,7 +6,7 @@ const Add = (props) => {
     <div>
       <header className="detail-header">
         <div></div>
-        <h1>Add Jam</h1>
+        <h1>Add Song</h1>
         <p>
           <Link to="/" className="home-link">
             Home
