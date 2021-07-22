@@ -95,7 +95,7 @@ header {
 .right-arrow {
   position: absolute;
   top: 50%;
-  right: 32px;
+  right: 10%;
   font-size: 3rem;
   color: white;
   z-index: 10;
@@ -110,7 +110,7 @@ header {
 .left-arrow {
   position: absolute;
   top: 50%;
-  left: 32px;
+  left: 10%;
   font-size: 3rem;
   color: white;
   z-index: 10;
@@ -131,6 +131,8 @@ header {
 .main-btns {
   display: flex;
   flex-direction: row;
+  align-items: center;
+  justify-content: center;
   padding: 5px;
 }
 
