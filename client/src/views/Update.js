@@ -40,11 +40,13 @@ const Update = (props) => {
   return (
     <div>
       <header className="detail-header">
-        <div></div>
-        <h1>Update A Song</h1>
-        <p>
+        <div>
           <Link to="/" className="home-link">Home</Link>
-        </p>
+        </div>
+        <div>
+          <h1>Update A Song</h1>
+        </div>
+        <div></div>
       </header>
       <div>
         <form onSubmit={updateSong} className="form">

@@ -15,9 +15,14 @@ const Detail = (props) => {
   return (
     <div>
       <header className="detail-header">
+        <div className="home-link">
+          <Link to="/" className="home-link">Home</Link>
+        </div>
+        <div>
+          <h1 className="song-name">{song.title}</h1>
+        </div>
         <div></div>
-        <h1 className="song-name">{song.title}</h1>
-        <p className="home-link"><Link to="/" className="home-link">Home</Link></p>
+
       </header>
       <div className="song-info">
         <img src={song.imageUrl} alt={song.title} className="detail-song-image" />
