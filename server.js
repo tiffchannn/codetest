@@ -7,6 +7,7 @@ const path = require('path');
 require('./server/config/mongoose.config');
 
 app.use(cors());
+// Express middleware functions, which provide and parse request.body.data
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

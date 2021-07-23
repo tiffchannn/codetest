@@ -2,10 +2,11 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import { Link } from "@reach/router";
 
-
+// Displays a song's detailed information
 const Detail = (props) => {
   const [song, setSong] = useState({});
 
+  // Will get the song info through an Axios API call, on component's first render
   useEffect(() => {
     axios.get("/api/song/" + props.id)
       .then(res => setSong(res.data))

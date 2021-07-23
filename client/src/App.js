@@ -9,6 +9,7 @@ import "./App.css";
 function App() {
   return (
     <div className="App">
+      {/* Router tells React to go to specified path(url) and update the DOM - not a true refresh */}
       <Router>
         <Main path="/" />
         <Add path="/song/add" />

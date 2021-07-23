@@ -1,5 +1,6 @@
 const mongoose = require('mongoose');
 
+// Creation of song collection using mongoose
 const SongSchema = new mongoose.Schema({
   title: { type: String },
   artist: { type: String },

@@ -1,3 +1,5 @@
+// Export functions for CRUDL operations, using Song model
+
 const { Song } = require("../models/model");
 
 module.exports.index = (request, response) => {

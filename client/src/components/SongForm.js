@@ -2,8 +2,10 @@ import React, { useState } from "react";
 import axios from "axios";
 import { navigate } from "@reach/router";
 
+// Form submission for Add and Update
 const SongForm = (props) => {
 
+  // Submit handler: utilizes props that are passed from Add and Update
   const handleSubmit = (e) => {
     e.preventDefault();
 
@@ -27,6 +29,7 @@ const SongForm = (props) => {
             type="text"
             value={props.song.title}
             name="title"
+            // Use of spread to copy songs and set appropriate attribute
             onChange={(e) => props.setSong({ ...props.song, title: e.target.value })}
           />
         </div>

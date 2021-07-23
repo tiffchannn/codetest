@@ -1,3 +1,4 @@
+// All the API endpoints
 const controller = require('../controllers/controller');
 
 module.exports = function (app) {
