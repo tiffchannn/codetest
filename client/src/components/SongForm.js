@@ -12,7 +12,7 @@ const SongForm = (props) => {
     axios.[props.method](props.url, props.song)
       .then((res) => {
         console.log("Response: ", res.data);
-        navigate("/");
+        navigate("/song/" + res.data._id);
       })
       .catch((err) => {
         console.log("Errors: ", err);
