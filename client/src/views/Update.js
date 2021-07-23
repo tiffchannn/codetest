@@ -3,11 +3,13 @@ import axios from "axios";
 import { navigate, Link } from "@reach/router";
 
 const Update = (props) => {
-  const { id } = props;
-  const [title, setTitle] = useState("");
-  const [artist, setArtist] = useState("");
-  const [imageUrl, setImageUrl] = useState("");
-  const [description, setDescription] = useState("");
+
+  const [song, setSong] = useState({
+    title: "",
+    artist: "",
+    description: "",
+    imageUrl: ""
+  });
 
   useEffect(() => {
     axios.get('/api/song/' + id)
@@ -48,51 +50,14 @@ const Update = (props) => {
         </div>
         <div></div>
       </header>
-      <div>
-        <form onSubmit={updateSong} className="form">
-          <div className="form-input">
-            <label className="form-label">Song Title:</label>
-            <input
-              className="input-field"
-              type="text"
-              value={title}
-              name="title"
-              onChange={(e) => setTitle(e.target.value)}
-            />
-          </div>
-          <div className="form-input">
-            <label className="form-label">Artist:</label>
-            <input
-              className="input-field"
-              type="text"
-              value={artist}
-              name="artist"
-              onChange={(e) => setArtist(e.target.value)}
-            />
-          </div>
-          <div className="form-input">
-            <label className="form-label">Image URL:</label>
-            <input
-              className="input-field"
-              type="text"
-              value={imageUrl}
-              name="imageUrl"
-              onChange={(e) => setImageUrl(e.target.value)}
-            />
-          </div>
-          <div className="form-input">
-            <label className="form-label">Description:</label>
-            <input
-              className="input-field"
-              type="text"
-              value={description}
-              name="description"
-              onChange={(e) => setDescription(e.target.value)}
-            />
-          </div>
-          <input type="submit" value="Update Song" name="submit" className="btn" />
-        </form>
-      </div >
+
+      <SongForm
+        method="put"
+        song={song}
+        setSong={setSong}
+        url={`/api/song/${props.id}`}
+      />
+
     </div>
   )
 

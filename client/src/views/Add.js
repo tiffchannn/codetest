@@ -1,7 +1,15 @@
+import React, { useState } from "react";
 import { Link } from "@reach/router";
 import SongForm from "../components/SongForm";
 
 const Add = (props) => {
+  const [song, setSong] = useState({
+    title: "",
+    artist: "",
+    description: "",
+    imageUrl: ""
+  });
+
   return (
     <div>
       <header className="detail-header">
@@ -18,7 +26,8 @@ const Add = (props) => {
 
       <SongForm
         method="post"
-        name=""
+        song={song}
+        setSong={setSong}
         url={"/api/song"}
         title=""
         artist=""
