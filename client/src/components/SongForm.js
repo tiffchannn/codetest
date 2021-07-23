@@ -12,7 +12,7 @@ const SongForm = (props) => {
     axios.[props.method](props.url, props.song)
       .then((res) => {
         console.log("Response: ", res.data);
-        navigate("/song/" + res.data._id);
+        navigate("/song/" + props.song._id);
       })
       .catch((err) => {
         console.log("Errors: ", err);
@@ -63,7 +63,7 @@ const SongForm = (props) => {
             onChange={(e) => props.setSong({ ...props.song, description: e.target.value })}
           />
         </div>
-        <input type="submit" value="Add Song" name="submit" className="btn" />
+        <input type="submit" value="Submit" name="submit" className="btn" />
       </form>
     </div >
   );
