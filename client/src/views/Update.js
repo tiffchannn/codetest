@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from "react";
 import axios from "axios";
 import { navigate, Link } from "@reach/router";
+import SongForm from "../components/SongForm";
 
 const Update = (props) => {
 
@@ -12,32 +13,11 @@ const Update = (props) => {
   });
 
   useEffect(() => {
-    axios.get('/api/song/' + id)
+    axios.get('/api/song/' + props.id)
       .then(res => {
-        setTitle(res.data.title)
-        setArtist(res.data.artist)
-        setImageUrl(res.data.imageUrl)
-        setDescription(res.data.description)
+        setSong(res.data)
       })
   }, [])
-
-  const updateSong = e => {
-    e.preventDefault();
-
-    axios.put('/api/song/' + id, {
-      title,
-      artist,
-      imageUrl,
-      description
-    })
-      .then(res => {
-        console.log('Song was successfully updated\n' + res)
-        navigate('/')
-      })
-      .catch(err => {
-        console.log("Errors: ", err)
-      })
-  }
 
   return (
     <div>
